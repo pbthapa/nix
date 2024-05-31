@@ -34,3 +34,16 @@ In this guide
 →Initialize a flake template in your preferred programming language
 →Build a Nix package from the flake.nix in the template
 
+Use nix-cli to build and run nix packages defined in nixpkgs
+For example:
+nix build "nixpkgs#nodePackages.npm" -- Downloads npm packages into the nix store. Creates result symlink where executable is present to run the program.
+./result/bin/npm -v
+output: 10.5.0
+
+or, use local flake to build and run nix packages.
+For example:
+mkdir nix-javascript-pkg && cd nix-javascript-pkg
+nix flake init --template "github:DeterminateSystems/zero-to-nix#javascript-pkg"
+
+
+
