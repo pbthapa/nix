@@ -1,5 +1,5 @@
 {
-  description = "My home manager flake";
+  description = "Package management with home-manager";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-23.11";
@@ -21,7 +21,7 @@
         inherit pkgs;
 
         modules = [
-          ./home.nix
+          ./home-manager/home.nix
         ];
       };
     };

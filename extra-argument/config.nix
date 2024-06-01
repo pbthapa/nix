@@ -1,5 +1,0 @@
-{ ... }: {
-  config = {
-    name = "Mr. White";
-  };
-}
