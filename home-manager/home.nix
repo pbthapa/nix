@@ -1,11 +1,16 @@
 { pkgs, ... }: {
   home.username = "pushpathapa";
   home.homeDirectory = "/Users/pushpathapa";
-  home.stateVersion = "23.11";
+
+  imports = [
+    ./apps/tmux.nix
+  ];
+
   home.packages = with pkgs; [
     nixpkgs-fmt
-    cowsay
-    hello
   ];
+
   programs.home-manager.enable = true;
+
+  home.stateVersion = "23.11";
 }
