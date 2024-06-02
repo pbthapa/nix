@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, ... }@inputs:
     let
       system = "aarch64-darwin";
       pkgs = import nixpkgs { inherit system; };
@@ -23,6 +23,8 @@
         modules = [
           ./home-manager/home.nix
         ];
+
+        extraSpecialArgs = { inherit inputs; };
       };
     };
 }
