@@ -2,6 +2,7 @@
   programs.tmux = {
     enable = true;
     terminal = "screen-256color";
+    clock24 = true;
     historyLimit = 100000;
     plugins = with pkgs; [
       tmuxPlugins.sensible

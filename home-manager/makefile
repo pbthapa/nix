@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	home-manager switch --flake .
+	home-manager switch
 
 .PHONY: clean
 clean:

@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, ... }: {
   home.username = "pushpathapa";
   home.homeDirectory = "/Users/pushpathapa";
 
@@ -8,9 +8,10 @@
 
   home.packages = with pkgs; [
     nixpkgs-fmt
+    nodejs_20
   ];
 
   programs.home-manager.enable = true;
 
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 }
