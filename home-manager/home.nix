@@ -12,9 +12,12 @@
     nixpkgs-fmt
     nodejs_20
     docker
+    docker-compose
     lsd
     htop
     jq
+    fzf
+    neovim
   ];
 
   programs.home-manager.enable = true;
