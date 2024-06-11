@@ -5,12 +5,14 @@
   imports = [
     ./apps/tmux.nix
     ./apps/java.nix
+    ./apps/lazyvim.nix
     ./apps/vscode.nix
   ];
 
   home.packages = with pkgs; [
     nixpkgs-fmt
     nodejs_20
+    lua
     docker
     docker-compose
     lsd

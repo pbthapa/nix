@@ -1,4 +1,4 @@
-{ pkgs, buildNpmPackage }:
+{ buildNpmPackage }:
 let
   appSource = fetchGit {
     url = "https://github.com/pbthapa/dummy-angular-app.git";
@@ -15,7 +15,6 @@ buildNpmPackage rec {
     export NG_CLI_ANALYTICS="false"
     npm install
     npm run build
-    ls
   '';
   makeCacheWritable = true;
   NODE_OPTIONS = "--openssl-legacy-provider";
