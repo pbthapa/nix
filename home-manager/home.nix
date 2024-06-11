@@ -6,6 +6,7 @@
     ./apps/tmux.nix
     ./apps/java.nix
     ./apps/vscode.nix
+    ./apps/zsh.nix
   ];
 
   home.packages = with pkgs; [
