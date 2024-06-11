@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     nixpkgs-fmt
     nodejs_20
+    python3
     lua
     docker
     docker-compose
