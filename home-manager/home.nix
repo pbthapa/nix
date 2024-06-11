@@ -5,7 +5,6 @@
   imports = [
     ./apps/tmux.nix
     ./apps/java.nix
-    ./apps/lazyvim.nix
     ./apps/vscode.nix
   ];
 
