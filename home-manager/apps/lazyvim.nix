@@ -6,5 +6,5 @@ let
   };
 in
 {
-  home.file.".config/lol".source = lazyVimSource;
+  home.file.".config/lazyvim".source = lazyVimSource;
 }
