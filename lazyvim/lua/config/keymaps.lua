@@ -24,9 +24,3 @@ keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>m", ":MaximizerToggle<CR>", { desc = "Maximize window" })
 keymap.set("n", "+", ":m +1<CR>", { desc = "Move one line down" })
 keymap.set("n", "-", ":m -2<CR>", { desc = "Move one line up" })
-
-keymap.set("n", "<leader>px", function()
-  local schemes = { "catppuccin", "habamax", "tokyonight", "rose-pine", "gruvbox" }
-  local index = math.random(1, #schemes)
-  vim.cmd("colorscheme " .. schemes[index])
-end, { desc = "Switch colorscheme" })

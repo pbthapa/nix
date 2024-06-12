@@ -3,7 +3,7 @@ export LANG=en_US.UTF-8
 PROJECTS_DIR="$HOME/Documents/projects"
 
 alias lh="cd $PROJECTS_DIR/nix/lazyvim"
-alias lv="NVIM_APPNAME=lazyvim nvim"
+alias lv="NVIM_APPNAME=lazyvim nvim ."
 alias h='cd $HOME'
 alias p='cd $PROJECTS_DIR'
 alias np='cd $PROJECTS_DIR/nix'

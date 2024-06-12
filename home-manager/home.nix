@@ -7,6 +7,7 @@
     ./apps/java.nix
     ./apps/vscode.nix
     ./apps/zsh.nix
+    ./apps/alacritty.nix
   ];
 
   home.packages = with pkgs; [
