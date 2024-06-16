@@ -3,11 +3,15 @@
   home.homeDirectory = "/Users/pushpathapa";
 
   imports = [
+    ./apps/starship.nix
+    ./apps/fzf.nix
     ./apps/tmux.nix
     ./apps/java.nix
     ./apps/vscode.nix
     ./apps/zsh.nix
     ./apps/alacritty.nix
+    ./apps/zoxide.nix
+    ./apps/thefuck.nix
   ];
 
   home.packages = with pkgs; [
@@ -17,10 +21,10 @@
     lua
     docker
     docker-compose
-    lsd
     htop
     jq
-    fzf
+    eza
+    bat
     neovim
   ];
 

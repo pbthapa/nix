@@ -1,14 +1,18 @@
 export LANG=en_US.UTF-8
 
-PROJECTS_DIR="$HOME/Documents/projects"
+#
+# Lazyvim aliases
+#
+alias lv="NVIM_APPNAME=lazyvim nvim"
 
-alias lh="cd $PROJECTS_DIR/nix/lazyvim"
-alias lv="NVIM_APPNAME=lazyvim nvim ."
-alias h='cd $HOME'
-alias p='cd $PROJECTS_DIR'
-alias np='cd $PROJECTS_DIR/nix'
-alias hm='cd $PROJECTS_DIR/nix/home-manager'
-alias t='tmux -u'
-alias tk='tmux kill-server'
+#
+# Tmux aliases
+#
+alias t="tmux -u"
+alias tk="tmux kill-server"
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#
+# Eza aliases
+#
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ll="eza --color=always --long --git --no-filesize --icons=always"

@@ -25,3 +25,10 @@ To remove symlink: unlink home-manager
 Further configurations present in repository to configure tmux and so on.
 
 The makefile already have home-manager switch and nix garbage collection shortcut commands.
+
+Program: fzf
+Keybindings:
+C-r -> History of commands executed
+C-t ->:
+**<TAB> -> Autocompletion showing list of files in the current directory
+

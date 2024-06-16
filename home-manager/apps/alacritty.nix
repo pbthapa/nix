@@ -1,26 +1,55 @@
-{ pkgs, ... }: {
+{ ... }: {
   programs.alacritty = {
     enable = true;
     settings = {
       env.TERM = "xterm-256color";
-
-      font = {
-        normal = {
-          family = "MesloLGS NF";
-        };
-
-        size = 19.0;
-      };
-
       window = {
+        decorations = "Buttonless";
+        opacity = 0.7;
+        blur = true;
+        option_as_alt = "Both";
+        dynamic_padding = true;
         padding = {
           x = 10;
           y = 10;
         };
-        opacity = 0.8;
-        blur = true;
-        decorations = "Buttonless";
-        option_as_alt = "Both";
+      };
+
+      font = {
+        normal = {
+          family = "MesloLGS NF";
+          style = "Regular";
+        };
+        bold = {
+          family = "MesloLGS NF";
+          style = "Bold";
+        };
+        italic = {
+          family = "MesloLGS NF";
+          style = "Italic";
+        };
+        bold_italic = {
+          family = "MesloLGS NF";
+          style = "Bold Italic";
+        };
+
+        glyph_offset = { x = 0; y = 0; };
+
+        size = 19.0;
+      };
+
+      colors = import config/alacritty/catppuccin-mocha.nix;
+
+      keyboard = {
+        bindings = [
+          { key = "n"; mods = "Alt"; chars = "~"; }
+          { key = "7"; mods = "Alt"; chars = "|"; }
+          { key = "l"; mods = "Alt"; chars = "@"; }
+          { key = "5"; mods = "Alt"; chars = "["; }
+          { key = "6"; mods = "Alt"; chars = "]"; }
+          { key = "8"; mods = "Alt"; chars = "{"; }
+          { key = "9"; mods = "Alt"; chars = "}"; }
+        ];
       };
     };
   };
