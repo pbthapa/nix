@@ -23,6 +23,8 @@
     docker
     docker-compose
     htop
+    ripgrep
+    tldr
     jq
     eza
     neovim

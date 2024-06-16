@@ -5,8 +5,8 @@
       env.TERM = "xterm-256color";
       window = {
         decorations = "Buttonless";
-        opacity = 0.7;
-        blur = true;
+        opacity = 0.5;
+        blur = false;
         option_as_alt = "Both";
         dynamic_padding = true;
         padding = {
@@ -44,6 +44,7 @@
         bindings = [
           { key = "n"; mods = "Alt"; chars = "~"; }
           { key = "7"; mods = "Alt"; chars = "|"; }
+          { key = "7"; mods = "Alt|Shift"; chars = "\\\\"; }
           { key = "l"; mods = "Alt"; chars = "@"; }
           { key = "5"; mods = "Alt"; chars = "["; }
           { key = "6"; mods = "Alt"; chars = "]"; }
