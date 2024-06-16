@@ -4,6 +4,7 @@
 
   imports = [
     ./apps/starship.nix
+    ./apps/bat.nix
     ./apps/fzf.nix
     ./apps/tmux.nix
     ./apps/java.nix
@@ -24,7 +25,6 @@
     htop
     jq
     eza
-    bat
     neovim
   ];
 
