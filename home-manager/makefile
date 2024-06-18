@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	home-manager switch
+	home-manager switch --flake .#pushpathapa-aarch64-darwin
 
 .PHONY: clean
 clean:
