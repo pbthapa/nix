@@ -5,7 +5,7 @@
       env.TERM = "xterm-256color";
       window = {
         decorations = "Buttonless";
-        opacity = 0.5;
+        opacity = 0.8;
         blur = false;
         option_as_alt = "Both";
         dynamic_padding = true;

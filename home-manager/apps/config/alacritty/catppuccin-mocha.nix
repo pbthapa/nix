@@ -42,7 +42,7 @@
   };
 
   selection = {
-    text = "#1e1e2e";
+    text = "#89b4fa";
     background = "#f5e0dc";
   };
 
