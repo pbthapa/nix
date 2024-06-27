@@ -20,8 +20,6 @@
     nodejs_20
     python3
     lua
-    docker
-    docker-compose
     htop
     ripgrep
     tldr

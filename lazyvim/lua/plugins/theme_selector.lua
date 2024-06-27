@@ -1,19 +1,18 @@
 local chooseColorScheme = function()
   local hour = os.date("*t").hour
   local colorScheme = "gruvbox"
-  if hour >= 0 or hour < 9 then
+  if hour >= 13 and hour < 24 then
     colorScheme = "catppuccin"
-  elseif hour >= 8 or hour < 16 then
-    colorScheme = "rose-pine-moon"
   else
-    colorScheme = "tokyonight"
+    colorScheme = "gruvbox"
   end
   return colorScheme
 end
 
 return {
-  { "ellisonleao/gruvbox.nvim", name = "gruvbox", lazy = true },
-  { "rose-pine/neovim", name = "rose-pine-moon" },
+  { "ellisonleao/gruvbox.nvim", name = "gruvbox", lazy = true, opts = {
+    transparent_mode = true,
+  } },
   {
     "catppuccin/nvim",
     name = "catppuccin",
