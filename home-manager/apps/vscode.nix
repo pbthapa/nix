@@ -18,10 +18,13 @@
       #Themes
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
+      #Code formatter
+      esbenp.prettier-vscode
     ];
     userSettings = {
       "editor.fontSize" = 16;
       "editor.formatOnSave" = true;
+      "javascript.editor.defaultFormatter" = "esbenp.prettier-vscode";
       "editor.semanticHighlighting.enabled" = true;
       "terminal.integrated.minimumContrastRatio" = 1;
       "files.encoding" = "utf8";
@@ -37,7 +40,7 @@
       "workbench.iconTheme" = "catppuccin-mocha";
       "workbench.colorTheme" = "Catppuccin Mocha";
       "catppuccin.accentColor" = "pink";
-      "terminal.external.osxExec" = "iTerm.app";
+      "terminal.external.osxExec" = "Alacritty.app";
       "terminal.integrated.shell.osx" = "/bin/zsh";
       "terminal.integrated.fontFamily" = "MesloLGS NF";
       "terminal.integrated.fontSize" = 16;

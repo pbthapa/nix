@@ -10,6 +10,7 @@
     ./apps/java.nix
     ./apps/vscode.nix
     ./apps/zsh.nix
+    ./apps/bash.nix
     ./apps/alacritty.nix
     ./apps/zoxide.nix
     ./apps/thefuck.nix
