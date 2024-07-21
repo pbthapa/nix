@@ -32,6 +32,7 @@ return {
         "yamlls",
         "jdtls",
         "nil",
+        "bacon-ls",
       },
     })
 
@@ -45,6 +46,8 @@ return {
         "eslint_d",
         "google-java-format",
         "nixpkgs-fmt",
+        "bacon",
+        "shfmt",
       },
     })
   end,

@@ -29,6 +29,8 @@ return {
       python = { "isort", "black" },
       java = { "google-java-format" },
       nix = { "nixpkgs-fmt" },
+      bash = { "shfmt" },
+      rust = { "rustfmt" },
     },
   },
 }

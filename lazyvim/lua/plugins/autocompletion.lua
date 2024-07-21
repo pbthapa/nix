@@ -37,5 +37,18 @@ return {
         { name = "cmdline" },
       }),
     })
+
+    cmp.setup({
+      window = {
+        completion = {
+          border = "rounded",
+        },
+        documentation = {
+          border = "rounded",
+          side_padding = 0,
+          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+        },
+      },
+    })
   end,
 }

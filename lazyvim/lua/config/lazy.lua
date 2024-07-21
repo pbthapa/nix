@@ -20,6 +20,7 @@ require("lazy").setup({
     { "christoomey/vim-tmux-navigator" },
     { "szw/vim-maximizer" },
     { "mfussenegger/nvim-jdtls", event = "BufRead" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     -- import/override with your plugins
     { import = "plugins" },
   },
