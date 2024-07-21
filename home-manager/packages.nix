@@ -24,11 +24,7 @@ let
 
   rustTools = with pkgs; [
     bacon
-    cargo
-    clippy
-    rustc
     rust-analyzer
-    rustfmt
   ];
 in
 core
