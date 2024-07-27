@@ -20,7 +20,7 @@
       {
         plugin = tmuxPlugins.power-theme;
         extraConfig = ''
-          set -g @tmux_power_theme '#efdbd6'
+          set -g @tmux_power_theme 'forest'
           set -g @tmux_power_time_format '%H:%M:%S'
           set -g @tmux_power_date_format '%d.%m.%Y'
         '';
