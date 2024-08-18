@@ -1,5 +1,5 @@
 return {
-  { "folke/noice.nvim", enabled = false },
+  { "folke/noice.nvim", enabled = true },
   { "folke/flash.nvim", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
   { "stevearc/dressing.nvim", enabled = false },
