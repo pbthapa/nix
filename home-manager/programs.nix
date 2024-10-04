@@ -13,6 +13,7 @@ let
     ./apps/kitty.nix
     ./apps/zoxide.nix
     ./apps/thefuck.nix
+    ./apps/neovim.nix
   ];
 in
 programs

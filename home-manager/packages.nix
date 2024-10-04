@@ -7,7 +7,6 @@ let
     tldr
     jq
     eza
-    neovim
   ];
 
   pythonTools = with pkgs; [

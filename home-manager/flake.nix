@@ -12,9 +12,12 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, flake-utils, rust-overlay, ... }@inputs:
+  outputs = { nixpkgs, home-manager, flake-utils, rust-overlay, neovim-nightly-overlay, ... }@inputs:
     flake-utils.lib.eachDefaultSystem (system:
       let
         user = "pushpathapa";
@@ -27,8 +30,13 @@
 
           modules = [
             ({ pkgs, ... }: {
-              nixpkgs.overlays = [ rust-overlay.overlays.default ];
-              home.packages = [ pkgs.rust-bin.stable.latest.default ];
+              nixpkgs.overlays = [ 
+                rust-overlay.overlays.default
+                neovim-nightly-overlay.overlays.default
+              ];
+              home.packages = with pkgs; [
+                rust-bin.stable.latest.default
+              ];
             })
             ./home.nix
           ];
