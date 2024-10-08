@@ -7,6 +7,7 @@ let
     tldr
     jq
     eza
+    translate-shell
   ];
 
   pythonTools = with pkgs; [

@@ -12,7 +12,7 @@
         font = wezterm.font("MesloLGS Nerd Font Mono"),
         font_size = 19.0,
         default_cursor_style = "BlinkingBar",
-        color_scheme = "Batman",
+        color_scheme = "Dracula",
         window_background_opacity = 0.7,
         macos_window_background_blur = 10,
         colors = {
