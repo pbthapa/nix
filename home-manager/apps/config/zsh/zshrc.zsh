@@ -39,6 +39,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 eval "$(pyenv init -)"
 
+# Google CLI path
+export GOOGLE_CLOUD_SDK_ROOT="/Users/pushpathapa/Documents/google-cloud-sdk"
+
+[[ -d $GOOGLE_CLOUD_SDK_ROOT/bin ]] && export PATH="$GOOGLE_CLOUD_SDK_ROOT/bin:$PATH"
+
 # Nix
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'

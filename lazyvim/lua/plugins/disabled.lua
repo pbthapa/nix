@@ -1,5 +1,5 @@
 return {
-  { "folke/noice.nvim", enabled = true },
+  { "folke/noice.nvim", enabled = false },
   { "folke/flash.nvim", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
   { "stevearc/dressing.nvim", enabled = false },
@@ -7,4 +7,5 @@ return {
   { "echasnovski/mini.pairs", enabled = false },
   { "echasnovski/mini.comment", enabled = false },
   { "echasnovski/mini.indentscope", enabled = false },
+  { "ibhagwan/fzf-lua", enabled = false },
 }
