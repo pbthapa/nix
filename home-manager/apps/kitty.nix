@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.kitty = {
     enable = true;
-    extraConfig = builtins.readFile ./config/kitty/kitty.conf;
-    themeFile = pkgs.kitty-themes."Dracula"; 
+    extraConfig = 
+    themeFile = builtins.readFile ./config/kitty/kitty.conf;
   };
 }
