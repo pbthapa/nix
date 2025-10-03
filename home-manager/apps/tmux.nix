@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   programs.tmux = {
     enable = true;
-    shell = "${pkgs.zsh}/bin/zsh";
     terminal = "screen-256color";
     clock24 = true;
     historyLimit = 100000;
