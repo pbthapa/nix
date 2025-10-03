@@ -17,6 +17,6 @@
       ];
     };
 
-    initExtra = "${builtins.readFile config/zsh/zshrc.zsh}";
+    initContent = "${builtins.readFile config/zsh/zshrc.zsh}";
   };
 }
