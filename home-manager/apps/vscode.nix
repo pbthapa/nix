@@ -9,9 +9,9 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;
+    enableUpdateCheck = true;
+    enableExtensionUpdateCheck = true;
     profiles.default {
-      enableUpdateCheck = true;
-      enableExtensionUpdateCheck = true;
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix
         vscjava.vscode-spring-initializr
