@@ -19,7 +19,7 @@ let
   ];
 
   nodejsTools = with pkgs; [
-    nodejs_20
+    nodejs_22
   ];
 
   rustTools = with pkgs; [
