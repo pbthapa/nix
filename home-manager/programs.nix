@@ -10,7 +10,6 @@ let
     ./apps/zsh.nix
     ./apps/bash.nix
     ./apps/alacritty.nix
-    ./apps/kitty.nix
     ./apps/wezterm.nix
     ./apps/zoxide.nix
     ./apps/thefuck.nix
