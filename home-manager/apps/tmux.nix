@@ -4,7 +4,7 @@
     terminal = "tmux-256color";
     clock24 = true;
     historyLimit = 100000;
-    shell = "${pkgs.zsh}/bin/zsh";
+    shell = "/bin/zsh -l";
     plugins = with pkgs; [
       tmuxPlugins.sensible
       tmuxPlugins.vim-tmux-navigator
