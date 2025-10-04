@@ -39,6 +39,17 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 eval "$(pyenv init -)"
 
+# Git operations
+gp() {
+  if [ -z "$1" ]; then
+      echo "Error: Commit message is missing!"
+      echo "Usage: gp \"Your commit message\""
+      return 1
+  fi
+
+  git add . && git commit -m "$1" && git push
+}
+
 # Google CLI path
 export GOOGLE_CLOUD_SDK_ROOT="/Users/pushpathapa/Documents/google-cloud-sdk"
 
