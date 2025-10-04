@@ -42,7 +42,7 @@ eval "$(pyenv init -)"
 function gitpush {
   if [[ -z "$1" ]]; then
       echo "Error: Commit message is missing!"
-      echo "Usage: gp \"Your commit message\""
+      echo "Usage: gitpush \"Your commit message\""
       return 1
   fi
 
