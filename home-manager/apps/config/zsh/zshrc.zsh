@@ -49,6 +49,9 @@ function gitpush {
   git add . && git commit -m "$1" && git push
 }
 
+# Ensure Nix profile binaries are available in every shell
+export PATH="$HOME/.nix-profile/bin:$PATH"
+
 # Only for interactive shells
 if [[ $- == *i* ]]; then
     # Initialize Starship prompt
