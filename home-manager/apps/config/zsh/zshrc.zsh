@@ -39,7 +39,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 eval "$(pyenv init -)"
 
-function gp {
+function gitpush {
   if [[ -z "$1" ]]; then
       echo "Error: Commit message is missing!"
       echo "Usage: gp \"Your commit message\""
