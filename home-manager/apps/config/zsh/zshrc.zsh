@@ -41,7 +41,7 @@ eval "$(pyenv init -)"
 
 # Git operations
 gp () {
-  if [ -z "$1" ]; then
+  if [[ -z "$1" ]]; then
       echo "Error: Commit message is missing!"
       echo "Usage: gp \"Your commit message\""
       return 1
