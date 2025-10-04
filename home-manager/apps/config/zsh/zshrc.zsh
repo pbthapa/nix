@@ -39,7 +39,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 eval "$(pyenv init -)"
 
-# Git operations
 gp () {
   if [[ -z "$1" ]]; then
       echo "Error: Commit message is missing!"
