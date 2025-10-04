@@ -18,16 +18,6 @@
         '';
       }
       {
-        plugin = tmuxPlugins.power-theme;
-        extraConfig = ''
-          set -g @tmux_power_theme 'snow'
-          set -g @tmux_power_time_format '%H:%M:%S'
-          set -g @tmux_power_date_format '%d.%m.%Y'
-          set -g @tmux_power_date_icon ' '
-          set -g @tmux_power_time_icon ' ' 
-        '';
-      }
-      {
         plugin = tmuxPlugins.resurrect;
         extraConfig = ''
           set -g @resurrect-strategy-vim 'session'
@@ -38,7 +28,6 @@
           set -g @resurrect-dir '~/.tmux/resurrect'
         '';
       }
-
     ];
     extraConfig = (builtins.readFile config/tmux.conf);
   };
