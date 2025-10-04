@@ -49,15 +49,6 @@ function gitpush {
   git add . && git commit -m "$1" && git push
 }
 
-# Ensure Nix profile binaries are available in every shell
-export PATH="$HOME/.nix-profile/bin:$PATH"
-
-# Only for interactive shells
-if [[ $- == *i* ]]; then
-    # Initialize Starship prompt
-    eval "$(starship init zsh)"
-fi
-
 # Google CLI path
 export GOOGLE_CLOUD_SDK_ROOT="/Users/pushpathapa/Documents/google-cloud-sdk"
 
